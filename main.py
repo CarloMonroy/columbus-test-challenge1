@@ -4,7 +4,7 @@ import pytest
 # Columbus interview test
 
 def plain_data(data: list):
-    if not isinstance(data, list):
+    if not isinstance(data, list): # Here we are making sure that we are passing a list
         return 'type error'
     if len(data) == 0:  # Here we check if the list is empty
         return data
